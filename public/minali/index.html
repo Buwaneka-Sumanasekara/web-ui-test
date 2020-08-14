@@ -2,10 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">  
+
     <title>Document</title>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
-    <h1>welcome</h1>
+   <!-- fixed bar-->
+   <section class="fixed-bar-wrapper">
+       <div class="container-fluid">
+           <div class="row fixed-top">
+               <div class="col-12 "></div>
+           </div>
+       </div>
+   </section> 
+   <!-- fixed bar ends-->
+   <!--navigation bar-->
+   <section class="navbar-wrapper">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+   </section>
+
+   <!-- navigation bar ends -->
 </body>
 </html>
