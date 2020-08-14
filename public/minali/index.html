@@ -1,57 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Tminali</title>
+    <title>Minali</title>
 
     <script src="js/jquery-3.5.1.js"></script>
-    
     <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- fixed bar-->
+    <section class="tab-wrapper">
+      <div class="container-fluid">
+        <div class="row headbar">
+          <div class="col-12">
+            <p class="float-left">+880166 253 232 info@domain.com</p>
+            <a class="btn border-left">Login</a>
+            <a class="btn border-right">Register</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</head>
-<body>
-   <!-- fixed bar-->
-   <section class="fixed-bar-wrapper">
-       <div class="container-fluid">
-           <div class="row fixed-top">
-               <div class="col-12 "></div>
-           </div>
-       </div>
-   </section> 
-   <!-- fixed bar ends-->
-   <!--navigation bar-->
-   <section class="navbar-wrapper">
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <!-- fixed bar ends-->
+    <!--navigation bar-->
+    <section class="navbar-wrapper">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive">
+          <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+          >
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Blog</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="">Blog</a>
+                  <a class="dropdown-item" href="">Single-Blog</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Pages</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="">Event</a>
+                  <a class="dropdown-item" href="">Event Details</a>
+                  <a class="dropdown-item" href="">Admissions</a>
+                  <a class="dropdown-item" href="">Elements</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary btn-lg">Apply now</button>
+              </li>
             </ul>
+          </div>
         </div>
-        </div>
-    </nav>
-   </section>
+      </nav>
+    </section>
 
-   <!-- navigation bar ends -->
-</body>
+    <!-- navigation bar ends -->
+    <!--image slider-->
+    <section class="image-slider-wrapper">
+      <div id="slides" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" />
+
+            <div class="carousel-caption">
+              <p class="display-2">
+                Boost up your skills with a new way of learning.
+              </p>
+              <button type="button" class="btn btn-primary btn-lg">
+                GET START
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-lg">
+                TAKE A TOUR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--image slider ends-->
+
+    <!--scholarship row-->
+<section class="scho-wrapper">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <button></button>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <button></button>
+            </div>                
+            <div class=" col-sm-12 col-md-4">
+                <button></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--scholarship row ends-->
+  </body>
 </html>
