@@ -14,15 +14,16 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="css/stylesheet.css">
 <link rel="stylesheet" href="css/Themify IconFonts 5-23-2014.json">
 <link rel="stylesheet" href="css/themify-icons.css">
- 
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="scss/slider.scss">
 <body> 
 
 
 
 
-  <!-- <header>
+   <header>
     <div class="header-area ">
-        <div class="header-top_area">
+         <div class="header-top_area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -37,238 +38,210 @@ crossorigin="anonymous">
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="sticky-header" class="main-header-area">
+        </div> 
+        <div id="sticky-header" class="main_head align-items-center">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header_wrap d-flex justify-content-between align-items-center">
+                    <div class="col-12">
+                        <div class="main-wrapper d-flex justify-content-between align-items-center">
                             <div class="header_left">
                                 <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo.png" alt="">
-                                    </a>
+                                    <a><img src="images/logo.png"></a>
                                 </div>
                             </div>
-                            <div class="header_right d-flex align-items-center">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a  href="index.html">home</a></li>
-                                            <li><a href="Courses.html">Courses</a></li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
+                            <div class="header_right d-flex align-items-center ">
+                                <div class="main_menu d-lg-block">
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light inline">                                        
+                                        <ul>
+                                            <li><a>Home</a></li>
+                                            <li><a>Courses</a></li>
+                                            <li><a>Blog<i class="ti-angle-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a>Blog</a></li>
+                                                    <li><a>Single-Blog</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="Event.html">Event</a></li>
-                                                    <li><a href="event_details.html">Event Details</a></li>
-                                                    <li><a href="Admissions.html">Admissions</a></li>
-                                                    <li><a href="elements.html">elements</a></li>
+                                            <li><a>Pages <i class="ti-angle-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a>Event</a></li>
+                                                    <li><a>Event Details</a></li>
+                                                    <li><a>Admissions</a></li>
+                                                    <li><a>Elements</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
+                                            <li><a>Contact</a></li>
+                                        </ul>                                    
                                     </nav>
                                 </div>
-                                <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#">Apply NOw</a>
+                                <div class="apply_btn_wrapper justify-content-end">
+                                    <div class="apply_btn ">
+                                        <a>APPLY NOW</a>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
+                        <div class="mobile_menu d-block d-lg-none">
+                            <div class="slicknav_menu">
+                                <a aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_open">
+                                    <span class="slicknav_menutxt">Menu</span>
+                                    <span class="slicknav_icon">
+                                        <span class="slicknav_icon-bar"></span>                                          
+                                        <span class="slicknav_icon-bar"></span>   
+                                        <span class="slicknav_icon-bar"></span>   
+                                    </span>
+                                </a>
+                                <ul class="slicknav_nav " aria-hidden="false" role="menu" >
+                                <li>
+                                    <a role="menuitem" tabindex="0">Home</a>
+                                </li>
+                                <li>
+                                    <a role="menuitem" tabindex="0">Courses</a>
+                                </li>
+                                <li class="slicknav_collapsed slicknav_parent">
+                                    <a role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row">
+                                        <a tabindex="0">Blog <i class="ti-angle-down"></i></a>
+                                    <span class="slicknav_arrow">+</span></a>
+                                    <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true">
+                                        <li><a role="menuitem" tabindex="0">blog</a></li>
+                                        <li><a role="menuitem" tabindex="0">single-blog</a></li>  
+                                    </ul>
+                                </li>
+                                <li class="slicknav_collapsed slicknav_parent">
+                                    <a role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row"><a tabindex="0">Pages <i class="ti-angle-down"></i></a>
+                                    <span class="slicknav_arrow">+</span></a>
+                                    <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true">
+                                        <li><a role="menuitem" tabindex="0">Event</a></li>
+                                        <li><a role="menuitem" tabindex="0">Event Details</a></li>
+                                        <li><a role="menuitem" tabindex="0">Admissions</a></li>
+                                        <li><a role="menuitem" tabindex="0">Elements</a></li>  
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" tabindex="0">Contact</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header> -->
+                    
+                    
+         </div>
+            
+        
+    
+</header> 
 
-    <!-- header login bar --> 
-      <header> 
-          <div class="header-area">
-               <div class="header-top">
-                    <div class="container-fluid">
-                          
-                            <div class="row">
-                                <div class="col-12">
-                                 <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
-                                    <a class="navbar-brand" href="#">
-                                        <p>
-                                            <span >+880166 253 232</span>
-                                             <span>info@domain.com</span>
-                                         </p>
-                                    </a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                      <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="d-flex justify-content-end bg-secondary mb-3">
-                                        <div  >Login</div>
-                                        <div >|</div>
-                                        <div >About</div>
-                                      </div> 
-                                       <ul class="navbar-nav" >
-                                        <li class="nav-item">
-                                          <a class="nav-link"  href="#">Login</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link"  href="#">|</a>
-                                          </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">About</a>
-                                        </li>
-                                         
-                                      </ul>
-                                    
-                                   </nav>
-                                 
-
-                            </div>
-                        </div>
-                        
-                    </div>
-               </div>
-           
-
-               </div>
-
-          
-      </header> 
-      <!-- fixed navbar -->
-      <section class="navbar-wrapper">
-        <nav class="navbar fixed navbar-expand-md navbar-light bg-light" >
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarResponsive"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Blog</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Blog</a>
-                    <a class="dropdown-item" href="">Single-Blog</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Pages</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Event</a>
-                    <a class="dropdown-item" href="">Event Details</a>
-                    <a class="dropdown-item" href="">Admissions</a>
-                    <a class="dropdown-item" href="">Elements</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <button class="btn btn-primary btn-lg">Apply now</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </section>
+   
      <!-- image slider -->
       <section class="image-slider-wrapper">
           <div class="container-fluid">
-        <div id="slides" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="img-fluid" src="images/group-students-use-computer-laptop-search_43957-26.jpg"  />
-              <div class="carousel-caption">
-                <h1 id="detail">
-                        <br>
-                        <br>
-                        <br>
-                    Boost up your skills 
-                    <br>
+              <div class="row">
+                <div class="col-lg-12">
+                      <div id="slides" class="carousel slide" data-ride="carousel">
+                         <div class="carousel-inner">
+                         <div class="carousel-item active">
+                           <img id="slide_img" class="img-fluid" src="images/banner.png"  />
+                           <div class="carousel-caption">
+                            <h1 id="detail">
+                            <br>
+                            <br>
+                            <br>
+                             Boost up your skills 
+                             <br>
                       
-                    with a new way of 
+                              with a new way of 
                      
-                    <br>
+                              <br>
                        
                     
-                    learning.
+                              learning.
                     
-                </h1>
+                               </h1>
                 
-                <button id="getstart" type="button" class="btn btn-primary btn-lg">
-                  GET START
-                </button>
-                <br>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  TAKE A TOUR
-                </button>
+                               <a href="#" class="boxed-start">Get Start</a>
+                               <a href="#" class="boxed-tour">Take a tour</a>
+                           </div>
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
+
     </div>
       </section>
 
       <!-- schoolership box -->
       <section>
-          <div class="container ">
-              <div id="sclrow" class="row">
+        <div class="service_area gray_bg">
+            <div class="container">
+                <div class="row justify-content-center ">
                   
-                  <div class="col-md-4">
-                    <div class="container p-3 my-3 bg-primary text-white">
-                        <h2>Schoolership <br>available</h2>
-                        
-                      </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="single_service d-flex align-items-center ">
+                        <div class="icon">
+                            <i class="flaticon-school"></i>
+                        </div>
+                        <div class="service_info">
+                            <h4>Scholarship</h4>
+                            <p>Available</p>
+                        </div>
+                    </div>
                    
                   </div>
-                  <div class="col-md-4">
-                    <div class="container p-3 my-3 bg-dark text-white">
-                        <h2>Schoolership <br>available</h2>
-                        
-                      </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div id="clmservice2" class="single_service d-flex align-items-center ">
+                        <div class="icon">
+                            <i class="flaticon-school"></i>
+                        </div>
+                        <div class="service_info">
+                            <h4>Scholarship</h4>
+                            <p>Available</p>
+                        </div>
+                    </div>
                    
                   </div>
-                  <div class="col-md-4">
-                    <div class="container p-3 my-3 bg-primary text-white">
-                        <h2>Schoolership <br>available</h2>
-                        
-                      </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div id="clmservice3" class="single_service d-flex align-items-center ">
+                        <div class="icon">
+                            <i class="flaticon-school"></i>
+                        </div>
+                        <div class="service_info">
+                            <h4>Scholarship</h4>
+                            <p>Available</p>
+                        </div>
+                    </div>
                   </div>
-
+                </div>
               </div>
           </div>
       </section>
+       <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center">
+                    <h3>Popular Program</h3>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="row">
+        <div class="col-lg-12">
+            <nav class="custom_tabs text-center">
+                <div class="nav" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Graduate                                </a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Postgraduate </a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">PHD Scholarships</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact" aria-selected="false">Training</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+       </section>
+
 </body>
 </html>
