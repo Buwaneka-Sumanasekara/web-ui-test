@@ -13,7 +13,9 @@ html, body{
     color: white;
     float: right;
 }
-
+.navbar{
+    position:sticky;
+}
 .navbar-brand img {
     height: 4rem;
     
