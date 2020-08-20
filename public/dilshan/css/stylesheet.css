@@ -10,17 +10,36 @@
   color: #234262;
 } */
 #detail{
+    position: relative;
     color: #234262;
     font-family:'Abril Fatface', cursive;
     font-size: 70px;
     font-weight: 400;
     line-height: 1.16;
     margin-bottom: 62px;
-    padding: 100px;
+    padding: 100px, 100px;
     text-align: left;
     font-size: 75px;
             
     
+}
+@media (min-width: 500px) and (max-width: 1000px){
+
+  #detail{
+    position: relative;
+    color: #234262;
+    font-family:'Abril Fatface', cursive;
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 1.16;
+    margin-bottom: 62px;
+    padding: 150px, 100px;
+    text-align: left;
+    font-size: 25px;
+            
+    
+}
+
 }
 .section_title h3{
   color: #234262;
