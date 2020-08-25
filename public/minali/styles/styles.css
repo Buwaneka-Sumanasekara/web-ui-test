@@ -13,6 +13,9 @@ ul{
     margin: 0;
     padding: 0;
 }
+li {
+    list-style: none;
+}
 .header-wrapper .top-area{
     background: hsl(231, 22%, 18%);
 }
@@ -31,6 +34,9 @@ ul{
 .text-wrap p{
     font-weight: 400;
 } 
+.text-wrap a {
+    cursor: pointer;
+}
 .text-wrap a:last-child::before{
     position: absolute; 
     width: 1px;
@@ -48,6 +54,7 @@ ul{
 .ti-user:before{
 content: "\e602";
 }
+
 .main_head{
     padding:25px 50px 25px 50px;
 }
@@ -74,6 +81,7 @@ content: "\e602";
     position:relative;
     
 } 
+
 .ti-angle-down::before{
     content: "\e64b";
     font-size: 9px;
@@ -113,6 +121,7 @@ content: "\e602";
     color:#fff;
     border-radius: 4px;
     padding: 13px 60px;
+    font-weight: 400;
     
 }
     
@@ -131,28 +140,37 @@ content: "\e602";
 .collapsed_menu li a:hover{
     color: #007bff;
 }
-.carousel-inner img{
-    height:100%;
-    width:100%;    
+.image_column{
+    padding-right: 0;
+    padding-left: 0;
+}
+.carousel-inner {
+    align-content: center;
+    position: relative;      
+    }
+.carousel-inner img{    
+    width: 125%;       
+    height: 200%;  
     background-position: center;
     position: relative;    
 }
 .carousel-caption{
-    position: absolute;
-    left: 0;
-    
+    position: absolute;    
+   left:25px;
+    padding-bottom: 20%;
+         
 }
 .slider_text{
-    width:50%;
+    width:60%;        
 }
 .slider_text h3{
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Abril Fatface", cursive;
     color: #234262;
-    font-size:75px;
+    font-size:55px;
     font-weight: 400;
     line-height: 1.16;    
     align-content: flex-start;
-    float: left;
+    text-align: left;
     margin-bottom: 62px;
 }
 .btn_3{
@@ -179,42 +197,171 @@ content: "\e602";
     border: 1px solid #77899d;
     border-radius: 3px;
     color: #1a1c28;
-    display: inline-block; 
-    
-}
-.slicknav_btn {
-    background-color: transparent;
-    cursor: pointer;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 99;
-    border: none;
-    border-radius:3px ;
-    padding:5px;
-    right: 0;
-    margin-top: -5px;
-    top:-29px;
-}
-.slicknav_menu .slicknav_nav{
-    display: block;
-    overflow: hidden;
-}
-.slicknav_nav ul{
-    display: none;
+    display: inline-block;     
 }
 
+.services_row{
+    padding-top: 85px;
+    padding-bottom: 50px;
+    background:#f8fafe;
+}
+.yellow{
+    background:#ebb830;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    margin-bottom: 30px;
+}
+.blue {
+    background:#317bd6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    margin-bottom: 30px;
+}
+.blue .icon i{
+    color:#317bd6!important;
+}
+.light_blue {
+    background:#1fc2d9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    margin-bottom: 30px;
+}
+.light_blue .icon i{
+    color:#1fc2d9!important;
+}
+.services_row .icon{
+width:70px;
+height: 70px;
+background:#fff;
+border-radius:50%;
+font-size:30px;
+text-align: center;
+position: relative;
+margin-right: 20px;
+} 
+.services_row .icon i{
+   color: #ebb830;
+   top:20%;
+   left: 25%;
+   position: absolute;
+}
+.services_row .info h4{
+color:#fff;
+font-family: 'Poppins', sans-serif;
+font-weight:500;
+font-size:25px;
+margin-bottom: 7px;
+}
+.services_row .info p {
+    color:#fff;
+    font-size:18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.popular_area {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.popular_title h3{
+    font-family: "Abril Fatface", cursive;
+    font-size:55px;
+    font-weight: 400;
+    color: #234262;
+    line-height: 1.2em;
+}
+.popular_area .tabs .nav{
+    display: inline-flex;
+    background:#f8fafe;
+    border-radius:3px;
+    margin:33px 0px 80px 0px; 
+    
+}
+.popular_area .tabs .nav a{
+    font-size: 16px;
+    color:#234262;
+    font-weight: 400;
+    padding:8px 22px;
+}
+.popular_area .tabs .nav a.active{
+    background:#60d3e4;
+    border-radius:3px;
+}
+.popular_area .single_program {
+    margin-bottom:100px;
+}
+.popular_area .single_program .pro_img img{
+    width:100%;
+}
+.popular_area .single_program .program_info{
+    background:#f8fafe;
+    padding: 55px 40px 60px 40px;
+}
+.popular_area .single_program .program_info span {
+    font-size:16px;
+    color: #232637;
+    font-weight: 400;
+}
+.popular_area .single_program .program_info h4 {
+    font-size:25px;
+    color: #232637;
+    font-weight: 400;
+    margin-top:23px;
+    font-family: "Abril Fatface", cursive;
+}
+.popular_area .single_program .program_info p {
+    font-size:16px;
+    color: #7d84ab;
+    font-weight: 400;
+    margin-top:23px;
+    margin-bottom: 35px;
+}
+.program_btn{
+    padding: 12px 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    border: 1px solid #1fc2d9;
+    border-radius: 3px;
+    color: #1fc2d9;
+    text-transform: uppercase;
+}
+.program_btn:hover{
+    text-decoration:none;
+    color:#f8fafe;
+    background: #1fc2d9;
+    transition: 0.5s;
+}
+.btn_all{
+    color: #1a1c28;
+    border:1px solid #77899d;
+    text-transform: uppercase;
+    padding: 17px 50px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius:3px;
+}
+.btn_all:hover{
+    text-decoration: none;
+    background: #77899d;
+    color: #f8fafe;
+    transition: 0.5s;
+}
 @media (max-width:1200px) and (min-width:992px){ 
 .top-area .main_head {
     padding: 0 50px;
-}
-.apply_btn a {
-    margin-left: 30px!important;
 }
 }
 @media (max-width:991px){
     .header_right .main_menu, .apply_btn{
         display: none;
     }
+    
 }
 @media (max-width:767px){
     .header_text{
